@@ -1,0 +1,48 @@
+.information {
+  margin-bottom: 30px;
+}
+
+.title {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+  color: var(--cor-buttons);
+}
+
+.iconeInformacao {
+  width: 40px;
+}
+
+.palestranteCabecalho {
+  display: flex;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.palestranteFoto {
+  width: 90px;
+  height: 120px;
+  margin: 0 10px 10px 0;
+
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border: 3px solid var(--cor-buttons);
+  border-radius: 12%;
+  float: left;
+}
+
+.palestranteNome {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 0px;
+  color: var(--cor-primaria);
+}
+
+.palestranteTitulacao {
+  font-size: 15px;
+  color: var(--cor-primaria);
+}

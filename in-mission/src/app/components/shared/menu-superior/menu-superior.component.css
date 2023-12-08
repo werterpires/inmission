@@ -1,0 +1,50 @@
+.itensSuperiores {
+  width: 100%;
+  height: 613px;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-image: url("/assets/imgs/inmissionBanner.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.menuSuperior {
+  width: 100%;
+  max-width: 900px;
+  height: 80px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.menuSuperiorOpcoes {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Fira Sans", sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  color: var(--cor-primaria);
+}
+
+.menuSuperiorOpcao {
+  list-style-type: none;
+  padding: 8px;
+  cursor: pointer;
+  transition: color, background-color 0.2s linear;
+  transition: transform 0.05s ease;
+}
+
+.menuSuperiorOpcao:hover {
+  color: var(--cor-primaria-hover);
+  background-color: var(--cor-primaria);
+}
+
+.menuSuperiorOpcao:active {
+  color: var(--cor-primaria-background-hover);
+  background-color: var(--cor-primaria-hover);
+}
