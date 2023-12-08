@@ -35,4 +35,4 @@ jobs:
           app-name: "inmission"
           slot-name: "Production"
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_4190ADFD04D84C7B849B533DE8ACEF19 }}
-          package: in-mission/dist/in-mission/browser
+          package: in-mission/dist/in-mission
