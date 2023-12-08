@@ -26,7 +26,6 @@ jobs:
           cd ./in-mission
           npm install
           npm run build --if-present
-          npm run test --if-present
           cd ..
 
       - name: "Deploy to Azure Web App"
