@@ -16,7 +16,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
   styleUrl: './menu-superior.component.css',
 })
 export class MenuSuperiorComponent {
-  janelaMenor480 = false;
+  janelaMenor768 = false;
   mostrarMenu = true;
 
   constructor(@Inject(PLATFORM_ID) private platformId: object) {}
@@ -28,11 +28,11 @@ export class MenuSuperiorComponent {
   }
 
   checkScreenWidth() {
-    if (window.innerWidth < 480) {
-      this.janelaMenor480 = true;
+    if (window.innerWidth <= 768) {
+      this.janelaMenor768 = true;
       this.mostrarMenu = false;
     } else {
-      this.janelaMenor480 = false;
+      this.janelaMenor768 = false;
       this.mostrarMenu = true;
     }
   }

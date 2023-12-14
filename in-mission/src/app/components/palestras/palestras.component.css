@@ -13,6 +13,14 @@
 @media (max-width: 480px) {
   .iFrameVideo {
     width: 100vw;
+    height: 50.62vw;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .iFrameVideo {
+    width: 90vw;
     height: 56.25vw;
     margin-bottom: 40px;
   }

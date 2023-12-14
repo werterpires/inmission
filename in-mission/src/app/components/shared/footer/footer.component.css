@@ -37,7 +37,7 @@ footer {
   font-weight: 400;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 768px) {
   .footercontent {
     padding: 10px;
     flex-direction: column;
