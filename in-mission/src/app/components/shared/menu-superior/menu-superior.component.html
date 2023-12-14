@@ -1,9 +1,26 @@
 <section class="itensSuperiores">
   <nav class="menuSuperior">
     <ul class="menuSuperiorOpcoes">
-      <li class="menuSuperiorOpcao">Home</li>
-      <li class="menuSuperiorOpcao">Sobre</li>
-      <li class="menuSuperiorOpcao">Contato</li>
+      <li class="menuSuperiorOpcao">
+        <a
+          routerLink="/"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+        >
+          Home</a
+        >
+      </li>
+      <li class="menuSuperiorOpcao">Downloads</li>
+      <li class="menuSuperiorOpcao">
+        <a
+          routerLink="palestras"
+          routerLinkActive="active"
+          ariaCurrentWhenActive="page"
+        >
+          Palestras</a
+        >
+      </li>
     </ul>
   </nav>
 </section>
+<router-outlet></router-outlet>
