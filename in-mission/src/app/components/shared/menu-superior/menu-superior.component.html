@@ -1,5 +1,5 @@
 <section class="itensSuperiores">
-  <div *ngIf="!janelaMenor480">
+  <div *ngIf="mostrarMenu">
     <nav class="menuSuperior">
       <ul class="menuSuperiorOpcoes">
         <li class="menuSuperiorOpcao">
@@ -26,9 +26,10 @@
   </div>
 </section>
 <img
+  *ngIf="janelaMenor480"
   id="iconeMenu"
   src="assets/icones/iconeMenu.svg"
   alt=""
-  (click)="janelaMenor480 = !janelaMenor480"
+  (click)="mostrarMenu = !mostrarMenu"
 />
 <router-outlet></router-outlet>
