@@ -6,6 +6,10 @@
   width: 40px;
 }
 
+.palestrante {
+  margin-bottom: 50px;
+}
+
 .palestranteCabecalho {
   display: flex;
   justify-content: start;
