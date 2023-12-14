@@ -9,16 +9,6 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
-.menuSuperior {
-  width: 100%;
-  max-width: 900px;
-  height: 80px;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  gap: 20px;
-}
 
 .menuSuperiorOpcoes {
   width: 100%;
@@ -47,4 +37,49 @@
 .menuSuperiorOpcao:active {
   color: var(--cor-primaria-background-hover);
   background-color: var(--cor-primaria-hover);
+}
+
+/* #iconeMenu {
+  display: none;
+} */
+
+@media (max-width: 480px) {
+  .itensSuperiores {
+    height: 144px;
+    justify-content: flex-end;
+  }
+
+  .menuSuperiorOpcoes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  #iconeMenu {
+    width: 55px;
+    position: fixed;
+    top: 5px;
+    right: 10px;
+    z-index: 5;
+  }
+
+  .menuSuperior {
+    width: 50vw;
+    max-width: 900px;
+    height: fit-content;
+    position: fixed;
+    top: 60px;
+    right: 20px;
+
+    padding: 10px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--cor-primaria-hover);
+  }
+
+  .menuSuperiorOpcao {
+    font-size: 12px;
+  }
 }

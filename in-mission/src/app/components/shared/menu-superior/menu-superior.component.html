@@ -1,26 +1,34 @@
 <section class="itensSuperiores">
-  <nav class="menuSuperior">
-    <ul class="menuSuperiorOpcoes">
-      <li class="menuSuperiorOpcao">
-        <a
-          routerLink="/"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-        >
-          Home</a
-        >
-      </li>
-      <li class="menuSuperiorOpcao">Downloads</li>
-      <li class="menuSuperiorOpcao">
-        <a
-          routerLink="palestras"
-          routerLinkActive="active"
-          ariaCurrentWhenActive="page"
-        >
-          Palestras</a
-        >
-      </li>
-    </ul>
-  </nav>
+  <div *ngIf="!janelaMenor480">
+    <nav class="menuSuperior">
+      <ul class="menuSuperiorOpcoes">
+        <li class="menuSuperiorOpcao">
+          <a
+            routerLink="/"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+          >
+            Home</a
+          >
+        </li>
+        <li class="menuSuperiorOpcao">Downloads</li>
+        <li class="menuSuperiorOpcao">
+          <a
+            routerLink="palestras"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+          >
+            Palestras</a
+          >
+        </li>
+      </ul>
+    </nav>
+  </div>
 </section>
+<img
+  id="iconeMenu"
+  src="assets/icones/iconeMenu.svg"
+  alt=""
+  (click)="janelaMenor480 = !janelaMenor480"
+/>
 <router-outlet></router-outlet>
