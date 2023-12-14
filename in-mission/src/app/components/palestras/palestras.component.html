@@ -1,0 +1,20 @@
+<app-container>
+  <section class="videos">
+    <div *ngFor="let url of videoUrls; let i = index">
+      <div class="title">
+        <h1>Palestra {{ i + 1 }}</h1>
+      </div>
+      <div class="iFrameVideo">
+        <iframe
+          width="100%"
+          height="100%"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          allowfullscreen
+          [src]="url"
+        ></iframe>
+      </div>
+    </div>
+  </section>
+</app-container>
