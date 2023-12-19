@@ -41,3 +41,10 @@
   font-size: 15px;
   color: var(--cor-primaria);
 }
+
+.videoRevitalizacao {
+  width: 80vw;
+  height: 20.17vw;
+  min-height: 150px;
+  margin-bottom: 10px;
+}
